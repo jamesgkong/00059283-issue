@@ -1,0 +1,26 @@
+type: environment.insomnia.rest/5.0
+name: base-global-environment-non-prod
+meta:
+  id: wrk_4dfa964f5a1b419da59c3a9de02f1356
+  created: 1753181850641
+  modified: 1753181850641
+  description: ""
+environments:
+  name: Base-global-Environment-non-prod
+  meta:
+    id: env_ea3711fb9e2c93c6538dbdec8f7151e818f16707
+    created: 1753181850646
+    modified: 1753181942355
+    isPrivate: false
+  data:
+    some-global-key: global-value-non-prod
+  subEnvironments:
+    - name: sub-global-Environment-non-prod
+      meta:
+        id: env_7aa942356b04491082b638f4c0d1fb06
+        created: 1753181873701
+        modified: 1753181924070
+        isPrivate: false
+        sortKey: 1753181873701
+      data:
+        some-global-key: sub-global-value-non-prod

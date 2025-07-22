@@ -19,11 +19,22 @@ collection:
         meta:
           id: req_7b5011150a0f47789264670046e3941a
           created: 1753180677082
-          modified: 1753180717477
+          modified: 1753181710921
           isPrivate: false
           description: ""
           sortKey: -1753180677082
         method: GET
+        parameters:
+          - id: pair_07c15c7c238b40319e395e2624a59480
+            name: param1
+            value: "{{ _['some-key'] }}"
+            description: ""
+            disabled: false
+          - id: pair_a2699721842c4fb4a29b426d912eb145
+            name: param2
+            value: "{{ _['some-global-key'] }}"
+            description: ""
+            disabled: false
         headers:
           - name: User-Agent
             value: insomnia/11.3.0
@@ -40,11 +51,22 @@ collection:
         meta:
           id: req_f75a15aad72443a78eb6994a6b144f74
           created: 1753180690657
-          modified: 1753180713591
+          modified: 1753181702348
           isPrivate: false
           description: ""
           sortKey: -1752887830029.5
         method: GET
+        parameters:
+          - id: pair_d948c013d576404caaa374d0f1e62f00
+            name: param1
+            value: "{{ _['some-key'] }}"
+            description: ""
+            disabled: false
+          - id: pair_cc13195f5fe04056ad9e3c016bbda112
+            name: param2
+            value: "{{ _['some-global-key'] }}"
+            description: ""
+            disabled: false
         headers:
           - name: User-Agent
             value: insomnia/11.3.0
@@ -67,5 +89,17 @@ environments:
   meta:
     id: env_30bce11649336b29f6db4e92b32a1e22c413055d
     created: 1753177008221
-    modified: 1753177008221
+    modified: 1753181644860
     isPrivate: false
+  data:
+    some-key: base-env-value
+  subEnvironments:
+    - name: Sub-Environment-1
+      meta:
+        id: env_ca816e07b2fe462b948d0c562072f3fd
+        created: 1753181616334
+        modified: 1753181650983
+        isPrivate: false
+        sortKey: 1753181616334
+      data:
+        some-key: sub-env-value

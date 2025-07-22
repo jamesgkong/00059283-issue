@@ -6,11 +6,21 @@ meta:
   modified: 1753177776581
   description: ""
 environments:
-  name: Base Environment
+  name: Base-global-Environment-PROD
   meta:
     id: env_268cd3add6561a08b611acea496c2c7d67d34318
     created: 1753177776598
-    modified: 1753177809469
+    modified: 1753181960355
     isPrivate: false
   data:
-    some-global-key: global-value
+    some-global-key: global-value-prod
+  subEnvironments:
+    - name: sub-global-Environment
+      meta:
+        id: env_4cf22f359aec423bb418c66826e543e5
+        created: 1753181737823
+        modified: 1753181964436
+        isPrivate: false
+        sortKey: 1753181737823
+      data:
+        some-global-key: sub-global-value-prod
