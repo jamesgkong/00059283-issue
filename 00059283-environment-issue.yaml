@@ -1,0 +1,71 @@
+type: collection.insomnia.rest/5.0
+name: 00059283-environment-issue
+meta:
+  id: wrk_177f8f7ccfd5439e871dc797bae9abd1
+  created: 1753177008219
+  modified: 1753177734897
+  description: ""
+collection:
+  - name: root-folder
+    meta:
+      id: fld_437e8a14eb624b6593600445d7a118ca
+      created: 1753177743900
+      modified: 1753177743900
+      sortKey: -1753177743900
+      description: ""
+    children:
+      - url: https://httpbin.konghq.com/anything
+        name: httpbin-anything-1
+        meta:
+          id: req_7b5011150a0f47789264670046e3941a
+          created: 1753180677082
+          modified: 1753180717477
+          isPrivate: false
+          description: ""
+          sortKey: -1753180677082
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.3.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: https://httpbin.konghq.com/anything
+        name: httpbin-anything-2
+        meta:
+          id: req_f75a15aad72443a78eb6994a6b144f74
+          created: 1753180690657
+          modified: 1753180713591
+          isPrivate: false
+          description: ""
+          sortKey: -1752887830029.5
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.3.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_30bce11649336b29f6db4e92b32a1e22c413055d
+    created: 1753177008222
+    modified: 1753177008222
+environments:
+  name: Base Environment
+  meta:
+    id: env_30bce11649336b29f6db4e92b32a1e22c413055d
+    created: 1753177008221
+    modified: 1753177008221
+    isPrivate: false
